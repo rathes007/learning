@@ -1,8 +1,8 @@
-name = "ram"
-
-if len(name) < 3:
-    print("name must be atleast 3 characters")
-elif len(name) > 50:
-    print("name can be maximum 50 characters")
+weight = int(input("weight: "))
+unit = input("(L)bs or (K)g: ")
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print(f"your weight {converted} kilos")
 else:
-    print("your name looks good")
+    converted = weight / 0.45
+    print(f"your weight {converted} pounds")
